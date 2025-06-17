@@ -53,13 +53,13 @@
       input = input.replace(/\D/g, '');
 
       // Remove leading 91 if present
-      if (input.startsWith("+977") && input.length > 10) {
+      if (input.startsWith("91") && input.length > 10) {
         input = input.substring(2);
       }
 
       // Validate and proceed
       if (input.length === 10) {
-        const fullNumber = "+977" + input;
+        const fullNumber = "91" + input;
         const waURL = `https://api.whatsapp.com/send?phone=${fullNumber}`;
         window.location.href = waURL; // redirect safely
       } else {
