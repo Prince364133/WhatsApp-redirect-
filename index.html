@@ -59,7 +59,7 @@
 
       // Validate and proceed
       if (input.length === 10) {
-        const fullNumber = "91" + input;
+        const fullNumber = "+977" + input;
         const waURL = `https://api.whatsapp.com/send?phone=${fullNumber}`;
         window.location.href = waURL; // redirect safely
       } else {
